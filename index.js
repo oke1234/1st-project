@@ -1,4 +1,4 @@
+// JavaScript: Show message when button is clicked
 function showMessage() {
-    alert("Hello, this is a simple JavaScript example!");
-  }
-  
+    alert("Hello, you clicked the button!");
+}
