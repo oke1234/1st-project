@@ -1,4 +1,4 @@
 function showMessage() {
-    alert('Hello!');
-}
-
+    alert("Hello, this is a simple JavaScript example!");
+  }
+  
