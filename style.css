@@ -17,7 +17,7 @@ h1, h2 {
     background-attachment: fixed; /* Creates the parallax effect */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50% ;
+    background-size: cover ;
     display: flex;
     justify-content: center;
     align-items: center;
