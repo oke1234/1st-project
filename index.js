@@ -1,4 +1,4 @@
-// JavaScript: Show message when button is clicked
+// Function to display the message when the button is clicked
 function showMessage() {
-    alert("Hello, you clicked the button!");
+    document.getElementById("message").innerText = "Thank you for clicking the button!";
 }
