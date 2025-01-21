@@ -1,3 +1,17 @@
+// Toggle the sidebar
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const main = document.querySelector('.main');
+    if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-200px';
+        main.style.marginLeft = '0';
+    } else {
+        sidebar.style.left = '0';
+        main.style.marginLeft = '200px';
+    }
+}
+
+// Load content dynamically
 function loadPage(page) {
     const content = document.getElementById('content');
     if (page === 'home') {
