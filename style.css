@@ -1,88 +1,37 @@
-/* Basic reset and styling */
-body, html {
+body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
 }
 
-h1, h2 {
-    font-weight: bold;
-    color: #fff;
-}
-
-/* Parallax effect */
-.parallax {
-    background-image: url('https://example.com/iphone-background.jpg'); /* Replace with your background image */
-    height: 100vh; /* Full viewport height */
-    background-attachment: fixed; /* Creates the parallax effect */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.dashboard {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100vh;
 }
 
-.content h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.content p {
-    font-size: 1.5em;
-}
-
-/* Button Style */
-button {
-    padding: 15px 30px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Main Content Section */
-.main-content {
-    padding: 50px;
-    text-align: center;
-}
-
-#message {
-    margin-top: 20px;
-    color: green;
-}
-
-/* Footer Section */
-footer {
+.sidebar {
+    width: 200px;
     background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
 
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.footer-links a {
+.sidebar button {
+    background: #444;
     color: white;
-    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: left;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
+.sidebar button:hover {
+    background: #555;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
 }
