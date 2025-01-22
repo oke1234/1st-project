@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nota</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div>
-        <button class="calendar-btn">Calendar</button>
-        <button class="com-btn">Communication</button>
-        <button class="analytics-btn">Analytics</button>
-        <button class="files-btn">Files</button>
-        <button class="settings-btn">Settings</button>
-        <button class="profile-btn">
-            <img src="profile.jpg" alt="Profile" class="profile-btn"> John Doe
-        </button>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login-process.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
     </div>
-
 </body>
 </html>
